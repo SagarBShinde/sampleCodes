@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--  <suite name="Suite" parallel="classes" thread-count="2" >-->
+<suite name="Suite" >
+  <test name="Test">
+  <parameter name="browser" value="firefox"/>
+  
+  <groups>
+  
+  	<define name="buildVerify">
+		<include name="smoke"/>
+	 	<include name="sanity"/>
+   	</define>
+			<run>
+				<include name="regression" />
+				<include name="buildVerify" />
+				<include name="pageObject"></include>
+				<exclude name=".*funct*"></exclude>
+			</run>
+	</groups>
+	
+	
+	<classes>
+      <class name="test.sagar.sample.sampleCodes.TestClass1">
+      		<methods>
+      			<include name=".*testClass1Method.*"/>
+      		</methods>
+      </class>
+	  <class name="test.sagar.sample.sampleCodes.testNgTest"/>
+      <class name="test.sagar.sample.sampleCodes.TestClass2"/>
+      <class name="test.PageObjectModel.SalesforceTest"/>
+      <class name="test.PageObjectModel.BaseTest"/>
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

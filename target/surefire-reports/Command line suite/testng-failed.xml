@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="test.sagar.sample.sampleCodes.TestClass1">
+        <methods>
+          <include name="testClass1Method2"/>
+          <include name="testClass1Method1"/>
+        </methods>
+      </class> <!-- test.sagar.sample.sampleCodes.TestClass1 -->
+      <class name="test.sagar.sample.sampleCodes.TestClass2">
+        <methods>
+          <include name="testClass2Method5"/>
+          <include name="testClass2Method2"/>
+          <include name="testClass2Method1"/>
+        </methods>
+      </class> <!-- test.sagar.sample.sampleCodes.TestClass2 -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

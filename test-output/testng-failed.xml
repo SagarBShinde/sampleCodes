@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+        <include name="buildVerify"/>
+        <include name="pageObject"/>
+        <exclude name=".*funct*"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.PageObjectModel.SalesforceTest">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- test.PageObjectModel.SalesforceTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
